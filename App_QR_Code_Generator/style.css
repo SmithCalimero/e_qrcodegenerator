@@ -1,0 +1,99 @@
+html {
+    /*vamos definir a cor do fundo da aplicação */
+    background-color: #282828;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    /* vamos fazer com que os elementos sejam automaticamente organizados verticalmente */
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    padding: 5px;
+}
+
+main {
+    /* cor do fundo da main */
+    background-color: #404040;
+    color: #fff;
+    /* vamos deixar o header e o footer ocupar todo o espaço possível */
+    flex: 1;
+    /* na mesma orientar os elementos verticalmente */
+    display: flex;
+    overflow:hidden;
+}
+
+main>div {
+    /* vamos fazer o mesmo no flex que fizemos no main,
+    deste modo todos os elementos vão ter a mesma largura*/
+    flex: 1;
+    /* na mesma orientar os elementos verticalmente */
+    display: flex;
+    flex-flow: column;
+}
+
+.textfield-section{
+    /* criar um padding e uma margem para manter esta parte afastada dos
+    outros elementos */
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.textfield-section>div {
+    display: flex;
+    flex-flow: column;
+}
+
+.properties-section {
+    flex: 1;
+    /* vamos criar uma scrollbar no caso do número de elementos ocupar muito espaço */
+    overflow-y: auto;
+    /* separar de novo */
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.properties-section>div {
+    /* separar para adicionar uma borda branca no final do bloco */
+    padding: 3px;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+.properties-section>div>p {
+    /* vamos fazer com que os parágrafos organizem os seus conteúdos horizontalmente */
+    display: flex;
+}
+
+.properties-section>div>p>label {
+    min-width: 75px;
+    /* texto alinhado à esquerda */
+    text-align: right;
+}
+
+.properties-section>div>p>input {
+    flex: 1;
+}
+
+.canvas-section{
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.canvas-section > canvas{
+    width: 100%;
+}
+
+footer {
+    padding: 5px;
+    color: #fff;
+}

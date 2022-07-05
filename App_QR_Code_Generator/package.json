@@ -1,0 +1,21 @@
+{
+  "name": "qr-generator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.2.8"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0",
+    "qrious": "^4.0.2"
+  },
+  "description": ""
+}

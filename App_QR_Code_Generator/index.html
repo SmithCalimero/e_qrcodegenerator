@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Os dois campos da Security Metadata são recomendados pelo Electron -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <title>QR Code Generator</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <!-- Este botão permite-nos adicionar os valores que são incluídos no código QR -->
+            <button type="button" id="Add">Add</button>
+            <!-- Este botão permite-nos remover os valores que são incluídos no código QR -->
+            <button type="button" id="Remove">Remove</button>
+            <!-- Este botão permite-nos gerar o código QR -->
+            <button type="button" id="Image">Image</button>
+            <!-- Este botão permite-nos verificar os conteúdos do código QR -->
+            <button type="button" id="Check">Check</button>
+            <!-- Este botão permite-nos gravar o código QR como uma imagem -->
+            <button type="button" id="Save">Save</button>
+        </header>
+        <!-- Vamos começar a Interface -->
+        <main>
+            <div>
+                <section class="textfield-section">
+                    <p><b>Image Text</b></p>
+                    <div>
+                        <!-- Header do código QR -->
+                        <label for="title">Title Text:</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <!-- Footer do código QR -->
+                        <label for="bottom">Bottom Text:</label>
+                        <input type="text" name="bottom" id="bottom">
+                    </div>
+                </section>
+                <section class="properties-section">
+                    <p><b>Properties</b></p>
+                </section>
+            </div>
+            <div>
+                <section class="canvas-section">
+                    <p><b>Result</b></p>
+                    <canvas id="canvas" width="600" height="600"></canvas>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Henrique Negrão 2022 </p>
+        </footer>
+    </body>
+</html>
