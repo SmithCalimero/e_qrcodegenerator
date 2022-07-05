@@ -1,6 +1,7 @@
 {
   "name": "qr-generator",
   "version": "1.0.0",
+  "description": "",
   "main": "main.js",
   "private": true,
   "scripts": {
@@ -11,11 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^16.2.8"
+    "electron": "^16.0.5"
   },
   "dependencies": {
     "jsqr": "^1.4.0",
     "qrious": "^4.0.2"
-  },
-  "description": ""
+  }
 }
