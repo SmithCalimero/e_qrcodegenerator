@@ -1,5 +1,5 @@
 # Gerador de Códigos QR
-Aplicação criada para a empresa DOPPEL que cria códigos QR
+Aplicação criada para o estágio que cria códigos QR
 
 Este gerador serve para implementar a aplicação de realidade aumentada
 
